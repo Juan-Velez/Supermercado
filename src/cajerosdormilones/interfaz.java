@@ -483,7 +483,7 @@ public class interfaz extends javax.swing.JFrame {
     }
 
     public void actualizarcobro() {
-        int preciocorte = 10;
+        //int preciocorte = 10;
         int b1 = 0, b2 = 0, b3 = 0;    //monto acumulado para barbero 1,2,3
         int total = 0;        // monto acumulado total
         jLabeltotal.setText("$ " + String.valueOf(total));
@@ -492,8 +492,8 @@ public class interfaz extends javax.swing.JFrame {
         jLabelacum3.setText("$ " + String.valueOf(b3));
     }
 
-    public void activar(int barbero) {
-        switch (barbero) {
+    public void activar(int cajero) {
+        switch (cajero) {
             case 1: {
                 jLabelCajeroA.setVisible(true);
                 jLabelatencion1.setVisible(true);
@@ -515,13 +515,13 @@ public class interfaz extends javax.swing.JFrame {
         }
     }
 
-    public int despertar(int barbero) {
-        switch (barbero) {
+    public int despertar(int cajero) {
+        switch (cajero) {
             case 1: {
                 jLabelCajeroA.setVisible(true);
                 jLabelatencion1.setVisible(true);
                 atenderCliente atender = new atenderCliente();
-                atender.contador = barbero;
+                atender.contador = cajero;
                 atender.start();
                 break;
             }
@@ -529,7 +529,7 @@ public class interfaz extends javax.swing.JFrame {
                 jLabelCajero2A.setVisible(true);
                 jLabelatencion2.setVisible(true);
                 atenderCliente atender = new atenderCliente();
-                atender.contador = barbero;
+                atender.contador = cajero;
                 atender.start();
                 break;
             }
@@ -537,7 +537,7 @@ public class interfaz extends javax.swing.JFrame {
                 jLabelCajero3A.setVisible(true);
                 jLabelAtencion3.setVisible(true);
                 atenderCliente atender = new atenderCliente();
-                atender.contador = barbero;
+                atender.contador =cajero;
                 atender.start();
                 break;
             }
@@ -561,8 +561,8 @@ public class interfaz extends javax.swing.JFrame {
         }
     }
 
-    public int dormir(int barbero) {
-        switch (barbero) {
+    public int dormir(int cajero) {
+        switch (cajero) {
             case 1:
                 jLabelCajeroA.setVisible(false);
                 jLabelestado1.setText("Durmiendo");
