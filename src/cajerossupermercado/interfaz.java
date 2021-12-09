@@ -1,4 +1,4 @@
-package cajerosdormilones;
+package cajerossupermercado;
 
 import java.awt.Color;
 import java.util.Random;
@@ -146,11 +146,11 @@ public class interfaz extends javax.swing.JFrame {
         jLabeltotal.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(jLabeltotal);
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 130, 30));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 70, 30));
 
         jLabel9.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
         jLabel9.setText("TOTAL ACUMULADO");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 110, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 110, -1));
 
         jLabelestado1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
         jPanel1.add(jLabelestado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, -1, -1));
